@@ -30,7 +30,10 @@ git status -> indica si hay archivos por añadir (en rojo) o sin commitear (en v
 git add example.txt -> añadir archivos
 git rm --cached example.txt -> elimina el archivo de git. Es como si nunca le hubiera hecho git add
 git commit -m "text exmaple" -> envia los archivos al repositorio local
-** si hago commit sin escribir un mensaje, se abrira otra ventana (vim). Para escribir el mensaje, presionar las teclas 
+
+** si hago commit sin escribir un mensaje, se abrira otra ventana (vim). 
+Para escribir el mensaje, presionar cualquier tecla. Para salir, presionar las teclas esc, luego shift + zz
+
 git cat -> ver contenido del archivo
 git log -> historial de commits de un archivo
 git show example.txt -> muestra los cambios a detalle que se han realizado en el archivo
