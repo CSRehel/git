@@ -1,0 +1,36 @@
+_______________________________________________________________________________________________________________
+//comando para git bash
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+pwd -> ver en donde me encuentro
+cd (change directory) -> cambiar de directorio
+cd .. -> regresar al directorio anterior
+ls -> listar archivos contenidos en el directorio actual
+ls -a -> listar todos los archivos (incluyendo ocultos) del directorio actual
+ls -l ->  listar todos los archivos en una lista
+mkdir (make directory) -> crear carpeta
+touch -> crear archivo vacio
+rm (remove) -> elimina archivos, directorios o todo el disco duro si se hace mal. 
+Lo que se elimina con este comando no se va a la papelera*
+
+* lo que esta despues del guion son argumentos. Un solo guion significa que solo usaremos una letra, 
+dos guiones es para una palabra
+
+_______________________________________________________________________________________________________________
+//para configurar git por primera vez
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+git config -> para ver informacion de comandos de la configuracion
+git config --list -> para ver como esta configurado nuestro git y si falta informacion
+git config --global user.name "nombre apellido" -> para indicar nombre de quien usara git 
+git config --global user.email "example@example.com" -> para indicar email de quien usara git 
+_______________________________________________________________________________________________________________
+// para usar git en un proyecto
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+git init -> inicializa git en una carpeta base
+git status -> indica si hay archivos por añadir (en rojo) o sin commitear (en verde)
+git add example.txt -> añadir archivos
+git rm --cached example.txt -> elimina el archivo de git. Es como si nunca le hubiera hecho git add
+git commit -m "text exmaple" -> envia los archivos al repositorio local
+** si hago commit sin escribir un mensaje, se abrira otra ventana (vim). Para escribir el mensaje, presionar las teclas 
+git cat -> ver contenido del archivo
+git log -> historial de commits de un archivo
+git show example.txt -> muestra los cambios a detalle que se han realizado en el archivo
