@@ -54,6 +54,8 @@ git checkout idcommit example.txt -> el archivo vuelve a la version seleccionada
 git merge nombre_rama/master -> fusion de los archivos de master con otra rama. Dependiendo de lo que se quiera, se debe escoger donde hacer el merge. Si existe conflicto, se debe solucionar y luego hacer commit normal.
 gitk -> para ver todos los commit graficamente
 git commit -am "example text" -> add y commit fusionados
+git push origin master -> enviar cambios al repositorio remoto
+git pull origin master -> traer cambios desde mi repositorio remoto
 _______________________________________________________________________________________________________________
 // procesos que hace git
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
