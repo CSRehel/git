@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-header{
+header, footer{
     display: flex;
     background-color: rgb(50, 50, 50);
     color: white;
@@ -12,3 +12,4 @@ header{
     align-items: center;
     justify-content: center;
 }
+
