@@ -38,6 +38,7 @@ Para escribir el mensaje, presionar cualquier tecla. Para salir, presionar las t
 git cat -> ver contenido del archivo
 git log -> historial de commits de un archivo.
 git log --stat -> muestra cambios especificos en el historial de commits de un archivo.
+git log --oneline -> Te muestra el id commit y el título del commit
 
 ** en git log aparece un numero muy largo que es el identificador de cada commit. Si quiero comparar dos commit y ver que diferencias hay, debo usar el comando git diff numeroprimeraversion numerosegundaversion.
 ** Si quiero ver las diferencias entre mi directorio y el staging, solo poner git diff y saldran los archivos que estan añadidos, sin añadir y modificados.
