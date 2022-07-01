@@ -13,10 +13,16 @@ header, footer{
     justify-content: center;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 main{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 main div{
