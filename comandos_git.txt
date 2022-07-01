@@ -46,7 +46,10 @@ git log --oneline -> Te muestra el id commit y el título del commit
 git show example.txt -> muestra los cambios a detalle que se han realizado en el archivo. Para salir del END presionar shift + q
 git reset idcommitanterior --hard/soft -> retrocede a una version anterior del archivo. EL modo hard borra todo hasta la version escogida, el modo soft borra todo, pero deja lo que este en el staging en ese momento.
 git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
+git branch nombre_nueva_rama -> crea una rama nueva
+git checkout nombrerama -> moverse a otra rama
 git checkout idcommit example.txt -> el archivo vuelve a la version seleccionada. Para guardarlo se debe hacer add y commit. Esto no borra versiones anterirores. Si se desea volver a la version mas reciente, poner git checkout master example.txt 
+
 
 _______________________________________________________________________________________________________________
 // procesos que hace git
