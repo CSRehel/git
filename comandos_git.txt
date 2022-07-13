@@ -56,6 +56,13 @@ gitk -> para ver todos los commit graficamente
 git commit -am "example text" -> add y commit fusionados
 git push origin master -> enviar cambios al repositorio remoto
 git pull origin master -> traer cambios desde mi repositorio remoto
+alias nombre_alias="comando de git" -> asigna un alias a un comando para ejecutarlo de forma mas rápida. (historial)
+git tag -a nombre_tag -m "mensaje descriptivo" id_commit -> crear tag
+git push origin --tags -> enviar tags a mi repositorio remoto
+git show-ref --tags -> ver id asociado a tags
+git tag -> ver tags
+git tag -d nombre_tag -> eliminar tag. Se debe hacer push de tags
+git push origin :refs/tags/nombre_tag -> eliminar tag de github
 
 // creación de una llave ssh
 ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
