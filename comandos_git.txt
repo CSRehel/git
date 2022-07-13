@@ -59,7 +59,7 @@ git pull origin master -> traer cambios desde mi repositorio remoto
 
 // creación de una llave ssh
 ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
-eval $(ssh-agent -s) -> Encender el “servidor” de llaves SSH de mi computadora.
+eval $(ssh-agent -s) -> verificar si el “servidor” de llaves SSH de mi computadora esta activo.
 ssh-add ~/.ssh/id_rsa -> añadir llave (privada)
 _______________________________________________________________________________________________________________
 // procesos que hace git
