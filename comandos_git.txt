@@ -56,7 +56,12 @@ gitk -> para ver todos los commit graficamente
 git commit -am "example text" -> add y commit fusionados
 git push origin master -> enviar cambios al repositorio remoto
 git pull origin master -> traer cambios desde mi repositorio remoto
+
+// creación de una llave ssh
+ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
+eval $(ssh-agent -s) -> Encender el “servidor” de llaves SSH de mi computadora.
+ssh-add ~/.ssh/id_rsa -> añadir llave (privada)
 _______________________________________________________________________________________________________________
 // procesos que hace git
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-Cuando se hace git init, se crea un espacio en memoria ram que se llama staging y se crea el repositorio local (.git). En este punto, cuando los archivos aun no se han añadido, estan es estado 'untracked' (sin rastrear). Cuando se hace git add, el estado del archivo cambia a 'tracked' (rastreado) y se añaden los archivos al staging, pero aun no se han subido al repositorio. Si hago modificaciones a un archivo sin añadirlo, entonces su estado sera 'modified'. Cuando se hace commit, los archivos son enviados al repositorio local y su estado es 'commited'. Este repositorio se llama master.
+Cuando se hace git init, se crea un espacio en memoria ram que se llama staging y se crea el repositorio local (.git). En este punto, cuando los archivos aun no se han añadido, estan es estado 'untracked' (sin rastrear). Cuando se hace git add, el estado del archivo cambia a 'tracked' (rastreado) y se añaden los archivos al staging, pero aun no se han subido al repositorio. Si hago modificaciones a un archivo sin añadirlo, entonces su estado sera 'modified'. Cuando se hace commit, los archivos son enviados al repositorio local y su estado es 'commited'. Este repositorio se llama master (ahora main).
