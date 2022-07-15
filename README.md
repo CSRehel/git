@@ -5,7 +5,7 @@
 ### Uso de encabezados
 <br>
 
-* Estos encabezados en cada sección de mi readme facilitaran la navegación en github.
+* Usar estos encabezados en cada sección de mi readme facilitaran la navegación en github.
 <hr>
 
 ### Estilos para textos
