@@ -44,7 +44,6 @@ git log --oneline -> Te muestra el id commit y el título del commit
 ** Si quiero ver las diferencias entre mi directorio y el staging, solo poner git diff y saldran los archivos que estan añadidos, sin añadir y modificados.
 
 git show example.txt -> muestra los cambios a detalle que se han realizado en el archivo. Para salir del END presionar shift + q
-git reset idcommitanterior --hard/soft -> retrocede a una version anterior del archivo. EL modo hard borra todo hasta la version escogida, el modo soft borra todo, pero deja lo que este en el staging en ese momento.
 git reset HEAD: Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 git branch -> para saber que ramas existen y en donde estoy
 git branch nombre_nueva_rama -> crea una rama nueva
@@ -83,7 +82,8 @@ Git clean solo detecta archivos nuevos, no es necesario que se trate de una copi
 git clean --dry-run -> Simula la eliminación de archivos nuevos o sin modificar
 git clean -f -> elimina todos los archivos que se muestran con el comando anterior
 
-
+git reflog -> ver hasta lo que pensaste en cada commit
+git reset --hard/soft id_commit -> retrocede a una version anterior del archivo. EL modo hard borra todo hasta la version escogida, el modo soft borra todo, pero deja lo que este en el staging en ese momento.
 
 _______________________________________________________________________________________________________________
 creación de una llave SSH
