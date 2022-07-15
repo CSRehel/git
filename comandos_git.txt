@@ -77,7 +77,7 @@ git stash pop stash@{<id_stash>} -> recuperar stash especifico por id
 git cherry-pick id_commit -> traer cambios hecho en un commit antiguo a la rama actual
 
 _______________________________________________________________________________________________________________
-creación de una lla SSH
+creación de una llave SSH
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 // creación de una llave ssh
 ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
