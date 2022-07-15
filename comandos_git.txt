@@ -67,6 +67,8 @@ git push origin nombre_rama -> subir rama a repositorio remoto (github)
 
 git cherry-pick id_commit -> traer cambios hecho en un commit antiguo a la rama actual
 
+agregar mas comando ***
+
 // creación de una llave ssh
 ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
 eval $(ssh-agent -s) -> verificar si el “servidor” de llaves SSH de mi computadora esta activo.
