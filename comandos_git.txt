@@ -65,6 +65,8 @@ git tag -d nombre_tag -> eliminar tag. Se debe hacer push de tags
 git push origin :refs/tags/nombre_tag -> eliminar tag de github
 git push origin nombre_rama -> subir rama a repositorio remoto (github)
 git stash -> para cuando no se desea hacer un commit aun y se quiere cambiar de rama.
+git stash -u -> guarda en memoria los cambios mas recientes incluyendo archivos que no han sido agregados al staging.
+git stash -a -> guarda en memoria los cambios mas recientes incluyendo archivos que no han sido agregados al staging e ignorados.
 git stash list -> ver stash
 git stash pop -> devuelve los cambios guardados en memoria en la rama que este actualmente
 git stash branch nombre_rama -> guardar cambios en memoria en otra rama nueva
@@ -75,6 +77,13 @@ git stash clear -> eliminar todos los elementos del stash
 git stash save "mensaje" -> mensaje para diferenciar distintos stash
 git stash pop stash@{<id_stash>} -> recuperar stash especifico por id
 git cherry-pick id_commit -> traer cambios hecho en un commit antiguo a la rama actual
+
+Git clean solo detecta archivos nuevos, no es necesario que se trate de una copia de otro archivo, suficiente con que sea un archivo nuevo que ustedes hayan creado. Archivos que se hayan modificado o editados git clean no interviene aquí.
+
+git clean --dry-run -> Simula la eliminación de archivos nuevos o sin modificar
+git clean -f -> elimina todos los archivos que se muestran con el comando anterior
+
+
 
 _______________________________________________________________________________________________________________
 creación de una llave SSH
