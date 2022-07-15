@@ -64,8 +64,21 @@ git tag -> ver tags
 git tag -d nombre_tag -> eliminar tag. Se debe hacer push de tags
 git push origin :refs/tags/nombre_tag -> eliminar tag de github
 git push origin nombre_rama -> subir rama a repositorio remoto (github)
+git stash -> para cuando no se desea hacer un commit aun y se quiere cambiar de rama.
+git stash list -> ver stash
+git stash pop -> devuelve los cambios guardados en memoria en la rama que este actualmente
+git stash branch nombre_rama -> guardar cambios en memoria en otra rama nueva
+git stash branch nombre_de_rama stash@{<num_stash>} -> crear rama con un stash especifico
+git stash drop -> eliminar stash mas reciente
+git stash drop stash@{<num_stash>} -> eliminar stash especifico
+git stash clear -> eliminar todos los elementos del stash
+git stash save "mensaje" -> mensaje para diferenciar distintos stash
+git stash pop stash@{<id_stash>} -> recuperar stash especifico por id
 
-// creación de una llave ssh
+
+_______________________________________________________________________________________________________________
+creación de una lla SSH
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 ssh-keygen -t rsa -b 4096 -C "example@example.com" -> crear llave ssh asociada a tu correo.
 eval $(ssh-agent -s) -> verificar si el “servidor” de llaves SSH de mi computadora esta activo.
 ssh-add ~/.ssh/id_rsa -> añadir llave (privada)
