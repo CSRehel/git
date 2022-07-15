@@ -85,6 +85,9 @@ git clean -f -> elimina todos los archivos que se muestran con el comando anteri
 git reflog -> ver hasta lo que pensaste en cada commit
 git reset --hard/soft id_commit -> retrocede a una version anterior del archivo. EL modo hard borra todo hasta la version escogida, el modo soft borra todo, pero deja lo que este en el staging en ese momento.
 
+git commit --amend -> fusiona el commit actual al commit anterior. Solo se muestra el commit anterior.
+
+
 _______________________________________________________________________________________________________________
 creación de una llave SSH
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
