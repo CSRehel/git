@@ -48,10 +48,12 @@ git reset HEAD: Este es el comando para sacar archivos del área de staging. No 
 git branch -> para saber que ramas existen y en donde estoy
 git branch nombre_nueva_rama -> crea una rama nueva
 git branch -d -> borra una rama
+git branch -r -> ver ramas en mi repositorio remoto
+git branch -a -> se muestran todas las ramas tanto locales como remotas
 git checkout nombrerama -> moverse a otra rama
-git checkout idcommit example.txt -> el archivo vuelve a la version seleccionada. Para guardarlo se debe hacer add y commit. Esto no borra versiones anterirores. Si se desea volver a la version mas reciente, poner git checkout master example.txt 
+git checkout idcommit example.txt -> el archivo vuelve a la version seleccionada. Para guardarlo se debe hacer add y commit. Esto no borra versiones anteriores. Si se desea volver a la version mas reciente, poner git checkout master example.txt 
 git merge nombre_rama/master -> fusion de los archivos de master con otra rama. Dependiendo de lo que se quiera, se debe escoger donde hacer el merge. Si existe conflicto, se debe solucionar y luego hacer commit normal.
-gitk -> para ver todos los commit graficamente
+gitk -> para ver todos los commit gráficamente
 git commit -am "example text" -> add y commit fusionados
 git push origin master -> enviar cambios al repositorio remoto
 git pull origin master -> traer cambios desde mi repositorio remoto
@@ -85,8 +87,22 @@ git clean -f -> elimina todos los archivos que se muestran con el comando anteri
 git reflog -> ver hasta lo que pensaste en cada commit
 git reset --hard/soft id_commit -> retrocede a una version anterior del archivo. EL modo hard borra todo hasta la version escogida, el modo soft borra todo, pero deja lo que este en el staging en ese momento.
 
-git commit --amend -> fusiona el commit actual al commit anterior. Solo se muestra el commit anterior.
+git commit --amend -> fusiona el commit actual al commit anterior. Solo se muestra el commit anterior. Recordar agregar archivos modificados con git add antes de usar este comando.
 
+grep –> buscar en los archivos
+log -> buscar en los commits.
+git grep palabra_a_buscar -> busca la palabra en el historial de mi repo
+git grep -n palabra_a_buscar –> en que lineas use la palabra
+git grep -c palabra_a_buscar -> cuantas veces use la palabra
+git grep -c “<etiqueta>”–> cuantas veces use una etiqueta html
+git log -S palabra_a_buscar --> cuantas veces use la palabra en el historial de commits.
+
+git shortlog -sn -> muestra cuantos commit han hecho cada miembros del equipo.
+git shortlog -sn --all -> muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+git shortlog -sn --all --no-merge -> muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
+git blame ARCHIVO -> muestra quien hizo cada cosa linea por linea
+git COMANDO --help -> muestra como funciona el comando.
+git blame ARCHIVO -linea_inicial,linea_final -> muestra quien hizo cada cosa linea por linea indicándole desde que linea
 
 _______________________________________________________________________________________________________________
 creación de una llave SSH
