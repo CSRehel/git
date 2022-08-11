@@ -55,6 +55,12 @@ git checkout idcommit example.txt -> el archivo vuelve a la version seleccionada
 git merge nombre_rama/master -> fusion de los archivos de master con otra rama. Dependiendo de lo que se quiera, se debe escoger donde hacer el merge. Si existe conflicto, se debe solucionar y luego hacer commit normal.
 gitk -> para ver todos los commit gráficamente
 git commit -am "example text" -> add y commit fusionados
+
+_____________conectar a un repositorio remoto________________
+git remote add origin git@github.com:CSRehel/ricomida.git
+git push -u origin master
+_____________________________________________________________
+
 git push origin master -> enviar cambios al repositorio remoto
 git pull origin master -> traer cambios desde mi repositorio remoto
 alias nombre_alias="comando de git" -> asigna un alias a un comando para ejecutarlo de forma mas rápida. (historial)
